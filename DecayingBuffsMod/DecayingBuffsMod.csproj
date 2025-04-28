@@ -62,8 +62,7 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Folder Include="assets\decayingbuffsmod\textures\" />
-  <Folder Include="assets\decayingbuffsmod\shapes\" />
+  <Folder Include="assets\decayingbuffsmod\textures\item\" />
 </ItemGroup>
 
 </Project>

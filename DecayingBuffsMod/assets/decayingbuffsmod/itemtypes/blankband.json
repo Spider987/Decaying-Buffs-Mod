@@ -1,0 +1,12 @@
+﻿{
+  "code": "blankband",
+  "creativeinventory": {
+    "general": [ "*" ]
+  },
+  "texture": {
+    "base": "item/blankband"
+  },
+  "shape": {
+    "base": "item/blankband"
+  }
+}
