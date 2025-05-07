@@ -1,0 +1,18 @@
+﻿{
+  "ingredientPattern": "F",
+  "width": 1,
+  "height": 1,
+  "shapeless":  true,
+  "ingredients": {
+    "F": {
+      "tpye": "item",
+      "code": "game:block-linen-normal-*",
+      "quantity": 64
+    }
+  },
+  "output": {
+    "type": "item",
+    "code": "compressedlinen",
+    "quantity":  1
+  }
+}
