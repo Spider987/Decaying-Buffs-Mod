@@ -5,7 +5,7 @@
   "shapeless": true,
   "ingredients": {
     "F": {
-      "tpye": "item",
+      "type": "item",
       "code": "game:vegetable*-onion",
       "quantity": 64
     }

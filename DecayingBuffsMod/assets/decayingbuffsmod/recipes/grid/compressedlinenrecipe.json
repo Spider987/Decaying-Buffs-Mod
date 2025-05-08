@@ -5,7 +5,7 @@
   "shapeless":  true,
   "ingredients": {
     "F": {
-      "tpye": "item",
+      "type": "item",
       "code": "game:block-linen-normal-*",
       "quantity": 64
     }

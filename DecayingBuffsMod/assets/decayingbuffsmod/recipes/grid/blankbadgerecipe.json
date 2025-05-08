@@ -5,7 +5,7 @@
   "shapeless": true,
   "ingredients": {
     "F": {
-      "tpye": "item",
+      "type": "item",
       "code": "game:vegetable*-parsnip",
       "quantity": 64
     }
