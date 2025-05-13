@@ -1,0 +1,12 @@
+﻿{
+  "code": "blankbadge",
+  "creativeinventory": {
+    "general": [ "*" ]
+  },
+  "texture": {
+    "base": "item/blankbadge"
+  },
+  "shape": {
+    "base": "item/blankbadge"
+  }
+}
