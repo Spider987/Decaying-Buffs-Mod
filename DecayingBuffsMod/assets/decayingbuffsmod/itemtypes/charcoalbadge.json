@@ -1,6 +1,15 @@
 ﻿{
   "code": "charcoalbadgee",
   "creativeinventory": {
-    "general":["*"]
+    "general": [ "*" ]
+  },
+  "transitionableProps": {
+    "type": "Perish",
+    "freshHours": { "avg": 8760 },
+    "trasitionHours": { "avg": 1 },
+    "transitionedStack": {
+      "type": "item",
+      "code": "blankbadge"
+    }
   }
 }
