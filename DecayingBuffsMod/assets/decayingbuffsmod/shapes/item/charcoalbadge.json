@@ -1,0 +1,39 @@
+{
+	"editor": {
+		"collapsedPaths": "",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"black": "game:block/cloth/linen/black"
+	},
+	"elements": [
+		{
+			"name": "Origin",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 1.0, 1.0, 1.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "Cube2",
+					"from": [ 7.0, 3.0, 8.0 ],
+					"to": [ 14.0, 10.0, 9.0 ],
+					"rotationOrigin": [ 11.0, 3.0, 8.0 ],
+					"rotationZ": 45.0,
+					"faces": {
+						"north": { "texture": "#black", "uv": [ 3.0, 2.5, 10.0, 9.5 ], "windMode": [-1,-1,-1,-1] },
+						"east": { "texture": "#black", "uv": [ 8.5, 2.5, 9.5, 9.5 ], "windMode": [-1,-1,-1,-1] },
+						"south": { "texture": "#black", "uv": [ 6.0, 3.0, 13.0, 10.0 ], "windMode": [-1,-1,-1,-1] },
+						"west": { "texture": "#black", "uv": [ 9.5, 2.5, 10.5, 9.5 ], "windMode": [-1,-1,-1,-1] },
+						"up": { "texture": "#black", "uv": [ 3.5, 4.5, 10.5, 5.5 ], "windMode": [-1,-1,-1,-1] },
+						"down": { "texture": "#black", "uv": [ 2.5, 2.5, 9.5, 3.5 ], "windMode": [-1,-1,-1,-1] }
+					}
+				}
+			]
+		}
+	]}

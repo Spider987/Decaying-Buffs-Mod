@@ -1,15 +1,31 @@
 ﻿{
-  "code": "charcoalbadgee",
+  "code": "charcoalbadge",
+  "class":  "ItemWearable",
   "creativeinventory": {
     "general": [ "*" ]
   },
-  "transitionableProps": {
-    "type": "Perish",
-    "freshHours": { "avg": 8760 },
-    "trasitionHours": { "avg": 1 },
-    "transitionedStack": {
-      "type": "item",
-      "code": "blankbadge"
+  "texture": {
+    "base": "item/charcoalbadge"
+  },
+  "shape": {
+    "base": "item/charcoalbadge"
+  },
+  "transitionableProps": [
+    {
+      "type": "Perish",
+      "freshHours": { "avg": 8760 },
+      "trasitionHours": { "avg": 1 },
+      "transitionedStack": {
+        "type": "item",
+        "code": "blankbadge"
+      }
+    }
+  ],
+  "attributes": {
+    "clothescategory": "emblem",
+    "wearableAttachment": true,
+    "statModifiers": {
+      "walkSpeed": 0.2
     }
   }
 }

@@ -1,0 +1,12 @@
+﻿{
+  "code": "badge",
+  "variantGroups": [
+    {
+      "code": "badgeType",
+      "states": [ "blank", "charcoal", "animal", "health", "miningSpeed", "oreDrop", "speed" ]
+    }
+  ],
+  "creativeinventory": {
+    "general": ["*"]
+  }
+}
