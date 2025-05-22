@@ -1,0 +1,32 @@
+{
+	"editor": {
+		"backDropShape": "C:/Users/Abigail/AppData/Roaming/Vintagestory/assets/game/shapes/entity/humanoid/seraph-faceless",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"black": "game:block/cloth/linen/black"
+	},
+	"elements": [
+		{
+			"name": "Cube2",
+			"stepParentName": "ShoulderAttachment",
+			"from": [ -5.0, -4.0, -3.0 ],
+			"to": [ -3.0, -2.0, -2.0 ],
+			"rotationOrigin": [ -5.0, -4.0, -3.0 ],
+			"rotationY": 90.0,
+			"rotationZ": 45.0,
+			"faces": {
+				"north": { "texture": "#black", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+				"east": { "texture": "#black", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "windMode": [-1,-1,-1,-1] },
+				"south": { "texture": "#black", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#black", "uv": [ 0.0, 0.0, 1.0, 2.0 ], "windMode": [-1,-1,-1,-1] },
+				"up": { "texture": "#black", "uv": [ 0.0, 0.0, 2.0, 1.0 ], "windMode": [-1,-1,-1,-1] },
+				"down": { "texture": "#black", "uv": [ 0.0, 0.0, 2.0, 1.0 ], "windMode": [-1,-1,-1,-1] }
+			}
+		}
+	]}

@@ -8,7 +8,7 @@
     "base": "item/charcoalbadge"
   },
   "shape": {
-    "base": "item/charcoalbadge"
+    "base": "item/charcoalbadge2"
   },
   "transitionableProps": [
     {
@@ -17,13 +17,14 @@
       "trasitionHours": { "avg": 1 },
       "transitionedStack": {
         "type": "item",
-        "code": "blankbadge"
+        "code": "badge-blank"
       }
     }
   ],
+  "storageFlags": 128,
   "attributes": {
-    "clothescategory": "emblem",
     "wearableAttachment": true,
+    "clothescategory": "emblem",
     "statModifiers": {
       "walkSpeed": 0.2
     }

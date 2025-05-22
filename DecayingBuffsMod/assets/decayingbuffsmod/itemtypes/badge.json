@@ -6,7 +6,42 @@
       "states": [ "blank", "charcoal", "animal", "health", "miningSpeed", "oreDrop", "speed" ]
     }
   ],
+  "texturebytype": {
+    "blank": { "base": "item/blankbadge" },
+    "charcoal": { "base": "item/charcoalbadge" }
+  },
+  "shapebytype": {
+    "blank": { "base": "item/blankbadge" },
+    "charcoal": { "base": "item/charcoalbadge" }
+  },
+  "transitionablePropsByType": {
+    "charcoal": [
+      {
+        "type": "Perish",
+        "freshHours": { "avg": 8760 },
+        "transitionHours": { "avg": 1 },
+        "transitionedStack": {
+          "type": "item",
+          "code": "badge-blank"
+        }
+      }
+    ]
+  },
+  "attributesByType": {
+    "charcoal": {
+      "wearableAttachment": true,
+      "clothescategory": "emblem"
+    },
+    "blank": {
+      "wearableAttachment": true,
+      "clothescategory":  "emblem"
+    }
+  },
   "creativeinventory": {
-    "general": ["*"]
+    "general": [ "*" ]
+  },
+  "storageFlags": 128,
+  "attributes": {
+
   }
 }
