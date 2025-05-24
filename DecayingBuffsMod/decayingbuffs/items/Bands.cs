@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
@@ -11,9 +12,9 @@ using Vintagestory.GameContent;
 namespace DecayingBuffsMod.decayingbuffs.items
 {
     //Class to handle the application of buffs to items in jsons.
-    internal class Buffs : ItemWearable
+    internal class Bands : ItemWearable, IAttachableToEntity
     {
-
+        
         //Declare dictionary to hold items.
 
         /*private Dictionary<string, Item> _items = new()
@@ -42,7 +43,7 @@ namespace DecayingBuffsMod.decayingbuffs.items
         }*/
 
 
-
+        public EnumCharacterDressType Type { get; set; }
         enum BuffsEnum
         {
             Blank,
@@ -89,7 +90,7 @@ namespace DecayingBuffsMod.decayingbuffs.items
         //Override GetHeldItemInfo.
         public override void GetHeldItemInfo(ItemSlot inSlot, StringBuilder dsc, IWorldAccessor world, bool withDebugInfo)
         {
-            //base.GetHeldItemInfo(inSlot, dsc, world, withDebugInfo);
+            base.GetHeldItemInfo(inSlot, dsc, world, withDebugInfo);
             
 
         }
@@ -97,18 +98,54 @@ namespace DecayingBuffsMod.decayingbuffs.items
         //Override OnHeldInteractStart to wear the item on right click.
         public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
         {
-            //base.OnHeldInteractStart(slot, byEntity, blockSel, entitySel, firstEvent, ref handling);
+            base.OnHeldInteractStart(slot, byEntity, blockSel, entitySel, firstEvent, ref handling);
 
             if(byEntity.Controls.LeftMouseDown)
             {
                 if (HandleEnum(ItemNames.CharcoalBadge) == ItemNames.CharcoalBadge)
                 {
                     
+                    //slot.ActivateSlot()
                 }
             }
             
             
         }
+        
+        //IAttachableToEntity stuff.
+        public bool IsAttachable(Entity toEntity, ItemStack itemStack)
+        {
+            return true;
+        }
 
+        public void CollectTextures(ItemStack stack, Shape shape, string texturePrefixCode, Dictionary<string, CompositeTexture> intoDict)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetCategoryCode(ItemStack stack)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CompositeShape GetAttachedShape(ItemStack stack, string slotCode)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string[] GetDisableElements(ItemStack stack)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string[] GetKeepElements(ItemStack stack)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string GetTexturePrefixCode(ItemStack stack)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
