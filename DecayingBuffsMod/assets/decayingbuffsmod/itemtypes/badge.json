@@ -1,5 +1,8 @@
 ﻿{
   "code": "badge",
+  "class": "decayingbuffsmod.bands",
+  "attackrange": 1,
+  "attackpower": 1,
   "variantGroups": [
     {
       "code": "badgeType",

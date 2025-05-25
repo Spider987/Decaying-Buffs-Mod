@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using Vintagestory.API.Client;
@@ -12,7 +13,7 @@ using Vintagestory.GameContent;
 namespace DecayingBuffsMod.decayingbuffs.items
 {
     //Class to handle the application of buffs to items in jsons.
-    internal class Bands : ItemWearable, IAttachableToEntity
+    internal class Bands : Item, IAttachableToEntity
     {
         
         //Declare dictionary to hold items.
@@ -87,25 +88,35 @@ namespace DecayingBuffsMod.decayingbuffs.items
             return ItemNames.BlankBadge;
         }
 
+        //Method for getting player attribtues.
+        public string GetPlayer(IWorldAccessor world)
+        {
+            //Get player and return attributes.
+            IPlayer player = (IPlayer)world.AllPlayers.GetValue(0);
+            Entity entity = player.Entity;
+            return entity.Attributes.ToString();
+            
+        }
+        
         //Override GetHeldItemInfo.
         public override void GetHeldItemInfo(ItemSlot inSlot, StringBuilder dsc, IWorldAccessor world, bool withDebugInfo)
         {
             base.GetHeldItemInfo(inSlot, dsc, world, withDebugInfo);
-            
 
+            //Logic to get attributes onto the consule using GetPlayer().
+            world.Api.Logger.Event(GetPlayer(world));
         }
-        
+
         //Override OnHeldInteractStart to wear the item on right click.
         public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
         {
             base.OnHeldInteractStart(slot, byEntity, blockSel, entitySel, firstEvent, ref handling);
 
-            if(byEntity.Controls.LeftMouseDown)
+            if(byEntity.Controls.RightMouseDown)
             {
                 if (HandleEnum(ItemNames.CharcoalBadge) == ItemNames.CharcoalBadge)
                 {
-                    
-                    //slot.ActivateSlot()
+
                 }
             }
             

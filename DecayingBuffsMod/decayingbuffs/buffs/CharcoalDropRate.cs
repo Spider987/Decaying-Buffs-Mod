@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Vintagestory.API.Common;
 using Vintagestory.API.Client;
 using Vintagestory.API.MathTools;
+using Vintagestory.Common;
 
 namespace DecayingBuffsMod.decayingbuffs.buffs
 {
@@ -20,6 +21,8 @@ namespace DecayingBuffsMod.decayingbuffs.buffs
         //Override GetDrops().
         public override ItemStack[] GetDrops(IWorldAccessor world, BlockPos pos, IPlayer byPlayer, ref float dropChanceMultiplier, ref EnumHandling handling)
         {
+
+            //NOTE: This code belongs in bands for ineracting, not here. Move it later.
             //Get current slot from hotbar.
             ItemSlot currentSlot = byPlayer.InventoryManager.ActiveHotbarSlot;
 
@@ -29,7 +32,7 @@ namespace DecayingBuffsMod.decayingbuffs.buffs
             }
             if (currentSlot != null)
             {
-
+                
             }
             return new ItemStack[0];
         }
